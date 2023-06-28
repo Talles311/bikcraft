@@ -1,0 +1,82 @@
+.header-bg {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header { 
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   max-width: 1160px;  /*lembrando que esse é o container que segura a div e que ja possui paddind de 20px para cada lado por isso 1160px mas com o border-box poderia usar os 1200px */
+   box-sizing: border-box; /*aqui toma a tela inteira*/
+   
+   margin-left: auto;
+   margin-right: auto;
+   /*essas duas config acima é para que o menu fique sempre alinhado dentro dos 1200px*/
+
+
+}
+
+.header-menu {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 40px;
+}
+
+.header-menu a {
+      display: inline-block;
+       padding: 16px 0px; /* aumentar a area de contato*/
+       text-decoration: none;
+
+       color: #FFF;
+       font-size: 18px;
+       position: relative;
+
+       font-family: 'Poppins';
+       font-weight: 400;
+}
+
+.header-menu a::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0px;
+        background: white;
+        margin-top: 4px;
+        transition: 0.1s;
+        position: absolute;
+
+}
+
+.header-menu a:hover::after{
+          width: 100%;
+}
+
+@media (max-width: 400px) {
+    .header {
+            justify-content: center;
+
+    }
+   
+   .header-menu a {
+          background: #111111;
+          padding: 8px 12px;
+          font-size: 14px;
+   }
+
+   .header-menu a:after {
+             display: none;
+
+   }
+
+   .header-menu a:hover {
+             background-color: #2e2e2e;    
+   }
+   .header-menu {
+         gap: 12px;
+   }
+}
