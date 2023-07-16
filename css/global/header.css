@@ -32,7 +32,7 @@
        padding: 16px 0px; /* aumentar a area de contato*/
        text-decoration: none;
 
-       color: #FFF;
+       color: var(--cor-0);
        font-size: 18px;
        position: relative;
 
@@ -45,7 +45,7 @@
         display: block;
         height: 2px;
         width: 0px;
-        background: white;
+        background: var(--cor-0);
         margin-top: 4px;
         transition: 0.1s;
         position: absolute;
@@ -63,7 +63,7 @@
     }
    
    .header-menu a {
-          background: #111111;
+          background: var(--cor-11);
           padding: 8px 12px;
           font-size: 14px;
    }
@@ -74,7 +74,7 @@
    }
 
    .header-menu a:hover {
-             background-color: #2e2e2e;    
+             background-color: var(--cor-10);    
    }
    .header-menu {
          gap: 12px;
