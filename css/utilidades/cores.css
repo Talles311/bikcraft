@@ -16,3 +16,20 @@
 
     --cor-p1: #ffbb00 ;
 }
+
+.cor-0 {
+   color: var(--cor-0);
+
+}
+
+.cor-5 {
+    color: var(--cor-5);
+
+}
+
+
+
+.cor-p1 {
+   color: var(--cor-p1);
+
+}
