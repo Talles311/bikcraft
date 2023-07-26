@@ -27,14 +27,7 @@
 .header-menu a {
        display: inline-block;
        padding: 16px 0px; /* aumentar a area de contato*/
-       text-decoration: none;
-        
-       color: var(--cor-0);
-       font-size: 18px;
        position: relative;
-
-       font-family: 'Poppins';
-       font-weight: 400;
 }
 
 .header-menu a::after {

@@ -36,15 +36,7 @@
        color: var(--cor-5);
 }
 
-@media (max-width: 1200px) {
-     .introducao h1 {
-           font-size: 3rem;
-          }
-     .introducao p { 
-          font-size: 18px;
-     }
 
-}
 
 @media (max-width: 800px) {
     .introducao-bg {
@@ -63,11 +55,10 @@
     }
    
     .introducao h1 {
-          font-size: 32px;
-         }
-     .introducao h1 {
+       
           margin-bottom: 16px;
          }
+
     .introducao img {
             height: 300px;
             width: 100%;
