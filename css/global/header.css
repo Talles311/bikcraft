@@ -8,14 +8,23 @@
    gap: 20px;
    justify-content: space-between;
    align-items: center;
+
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+   /*
+   
    padding: 20px;
-   max-width: 1160px;  /*lembrando que esse é o container que segura a div e que ja possui paddind de 20px para cada lado por isso 1160px mas com o border-box poderia usar os 1200px */
-   box-sizing: border-box; /*aqui toma a tela inteira*/
+   max-width: 1160px; 
+    /*lembrando que esse é o container que segura a div e que ja possui paddind de 20px para cada lado por isso 1160px mas com o border-box poderia usar os 1200px 
+   
+    box-sizing: border-box; 
+    !aqui toma a tela inteira!
    
    margin-left: auto;
    margin-right: auto;
-   /*essas duas config acima é para que o menu fique sempre alinhado dentro dos 1200px*/
-   
+                         essas duas config acima é para que o menu fique sempre alinhado dentro dos 1200px 
+   */
 }
 
 .header-menu {

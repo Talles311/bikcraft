@@ -1,31 +1,30 @@
 .bicicletas-lista {
-      padding-top: 120px;
+      padding-top: 60px;
       padding-bottom: 120px;
 } 
 
 .bicicletas-lista h2 {
           margin-bottom: 20px;
-          box-sizing: border-box;
-          max-width: 1200px;
-          
-          padding-left: 20px;
-          padding-right: 20px; 
-          
-          margin-left: auto;
-          margin-right: auto;
-
 }
 
 .bicicletas-lista ul {
            display: flex;  
            gap: 40px;
-           padding: 0 20px;
+           padding: 0 20px 20px 10px;
            
            max-width: 1400px; 
            /*Sempre que defino "max-width" devo em seguida definir os valores abaixo de margin*/
            margin-left: auto;
            margin-right: auto;
+           overflow-x: auto;
 }
+
+.bicicletas-lista li {
+    flex: 1;
+          min-width: 280px;
+
+}
+
 
 .bicicletas-lista a { /*Aqui eu fiz essa estilização para quando eu apertar "tab" no site não selecionar tag por tag e sim o item inteiro, pois a tag "a" é in-line block o que selecionaria tag por tag se eu não o colocasse como "display: block"*/
           display: block;
@@ -53,10 +52,29 @@
     margin-right: 8px;
 
     background: var(--cor-p1);
+    transition: width 0.2s;
+}
+
+
+.bicicletas-lista a:hover h3::before {
+                width: 24px;
+ 
 
 }
 
+
 .bicicletas-lista li span {
          padding-left: 20px;         
+}
+
+@media (max-width: 800px) {
+    .bicicletas-lista {
+        padding-bottom: 60px;
+  } 
+
+  .bicicletas-lista ul {
+             gap: 20px;
+  }
+
 
 }
