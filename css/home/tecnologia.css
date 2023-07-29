@@ -80,5 +80,17 @@
                   display: none;
 
           }
-
+          .tecnologia a {
+            margin-bottom: 40px;
+            
         }
+ }
+
+ @media (max-width: 600px) {
+           .tecnologia-vantagens {
+                flex-direction: column;
+                gap: 20px;
+           }
+ 
+
+ }
