@@ -39,7 +39,7 @@ padding: 0 20px;
 
 @media (max-width: 800px) {
         .parceiros {
-               background-color: aqua;
+               background-color: var(--cor-0);
                padding-bottom: 60px; 
         }
 
