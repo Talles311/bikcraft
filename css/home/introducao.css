@@ -8,7 +8,7 @@
 .introducao {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0px 40px; 
+        gap: 40px; 
 }
 
 .introducao img {
@@ -16,10 +16,11 @@
         height: 100%;
         object-fit: cover; 
         border-radius: 4px;
+        
+
 }
 
 .introducao-conteudo {
-       align-self: flex-end;
       padding-bottom: 200px;
 }
 
