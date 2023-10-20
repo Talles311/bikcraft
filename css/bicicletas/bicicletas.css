@@ -1,6 +1,5 @@
 .bicicletas-bg {
-       background: var(--cor-11);
-
+       background: linear-gradient(to right, var(--cor-0) 25%, var(--cor-11) 0% );
 }
 
 .bicicletas {
@@ -37,7 +36,7 @@
 .bicicletas-conteudo {
         display: grid;
         grid-template-columns: 1fr auto;
-
+        align-content: start;
 }
 
 .bicicletas-conteudo h2, 
@@ -104,6 +103,10 @@
                  padding-bottom: 40px;
          }
 
+         .bicicletas-bg {
+                background: var(--cor-11);
+         }
+
 }
 
 @media (max-width: 600px) {
@@ -112,9 +115,15 @@
                     grid-template-columns: 1fr;
            }   
 
+          .bicicletas-conteudo ul {
+                    font-size: 1rem;
+                     margin-bottom: 32px;
+                    grid-template-columns: 1fr 1fr;
+          }
+
            .bicicletas-conteudo a {
-                    margin-top: 40px;
-                   place-self: center;
-                    justify-self: start;
+                    
+                   place-self: start;
+                  
            }
 }
