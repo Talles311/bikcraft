@@ -57,7 +57,10 @@ const galeriaContainer = document.querySelector(".bicicleta-imagens");
 
 function trocarImagem(event){
       const img = event.currentTarget;  
-      galeriaContainer.prepend(img); 
+      const media = matchMedia("(min-width: 1000px)") .matches;
+      if (media) {
+      galeriaContainer.prepend(img);
+      } 
 }
 
 function eventosGaleria(img) {   //função trocarimagem
@@ -68,5 +71,11 @@ function eventosGaleria(img) {   //função trocarimagem
 // começar adicionando um evento de clique 
  galeria.forEach(eventosGaleria);
 
+
+ // Animação 
+
+ if (window.SimpleAnime){
+ new SimpleAnime(); 
+}
 
 
